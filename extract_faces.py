@@ -28,3 +28,5 @@ for file in os.listdir(IMAGE_DIR):
                 print crop_file.format(CROP_DIR, os.path.splitext(os.path.basename(file))[0], f)
                 cv2.imwrite(crop_file.format(CROP_DIR, os.path.splitext(os.path.basename(file))[0], f), face)
                 f += 1
+
+                python face_detect.py
